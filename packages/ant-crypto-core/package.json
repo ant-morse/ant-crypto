@@ -1,0 +1,17 @@
+{
+  "name": "ant-crypto-core",
+  "version": "1.4.1",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-morse/ant-crypto/tree/master/packages/ant-crypto-core",
+    "directory": "packages/ant-crypto-core"
+  },
+  "homepage": "https://github.com/ant-morse/ant-crypto",
+  "bugs": "https://github.com/ant-morse/ant-crypto/issues",
+  "authors": [
+    "fengsx <fengsx@msn.com> (https://github.com/fengsx)"
+  ],
+  "license": "MIT"
+}
