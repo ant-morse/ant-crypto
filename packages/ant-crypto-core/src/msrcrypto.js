@@ -8888,4 +8888,4 @@ var msrCrypto = msrCrypto || (function () {
 
 })();
 
-modules.exports = msrCrypto;
+module.exports = msrCrypto;

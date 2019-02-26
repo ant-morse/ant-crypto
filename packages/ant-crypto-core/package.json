@@ -1,6 +1,6 @@
 {
   "name": "ant-crypto-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/msrcrypto.min.js",
   "files": [
     "dist",
