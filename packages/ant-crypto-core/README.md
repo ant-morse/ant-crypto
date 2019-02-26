@@ -20,7 +20,7 @@ This library is under active development. Future updates to this library may cha
 
 ## Where I modified
 
-`msrcrypto.js` adn `msrcrypto.aes.js`:
+`msrcrypto.js` and `msrcrypto.aes.js`:
 - Remove the polyfill of Promise. You can provide by yourself If needed.
 - Add `export`.
 - Run in async mode if `window` or `global` is undefined.
