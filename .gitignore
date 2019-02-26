@@ -1,5 +1,7 @@
 
+.tea
 .DS_Store
+dist
 tmp
 /node_modules
 /packages/*/node_modules

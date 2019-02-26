@@ -1,23 +1,34 @@
 {
   "name": "ant-crypto",
   "version": "0.0.1",
-  "description": "web crypto tools",
-  "main": "index.js",
+  "description": "webcrypto library for node, browser and mini program",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bootstrap": "lerna bootstrap",
+    "build": "node ./scripts/build.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ant-morse/ant-crypto.git"
   },
-  "keywords": [
-    "webcrypto",
-    "wasm"
-  ],
   "author": "fengsx <fengsx@msn.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ant-morse/ant-crypto/issues"
   },
-  "homepage": "https://github.com/ant-morse/ant-crypto#readme"
+  "homepage": "https://github.com/ant-morse/ant-crypto#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "eslint": "5.10.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "lerna": "^3.13.0",
+    "lerna-changelog": "^0.5.0",
+    "rollup": "^1.2.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-uglify": "^6.0.2"
+  },
+  "dependencies": {}
 }
