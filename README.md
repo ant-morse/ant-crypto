@@ -12,9 +12,9 @@ This repository is a monorepo that we manage using [Lerna](https://github.com/le
 
 | Package | Version | Docs | Description |
 |--|--|--|--|
-| [`ant-crypto-core`](/packages/ant-crypto-core) | ![npm](https://img.shields.io/npm/v/ant-crypto-core.svg?style=flat-square)| TBD | The javascript core of ant-crypto|
-| [`ant-crypto-utils`](/packages/ant-crypto-utils) | ![npm](https://img.shields.io/npm/v/ant-crypto-utils.svg?style=flat-square)| TBD | The utils of ant-crypto|
-| [`ant-crypto`](/packages/ant-crypto) | ![npm](https://img.shields.io/npm/v/ant-crypto.svg?style=flat-square)| TBD | The core of ant-crypto|| [`ant-crypto`](/packages/ant-crypto) | ![npm](https://img.shields.io/npm/v/ant-crypto.svg?style=flat-square)](https://www.npmjs.com/package/ant-crypto) | TBD | The core of ant-crypto|
+| [`ant-crypto-core`](/packages/ant-crypto-core) | [![npm](https://img.shields.io/npm/v/ant-crypto-core.svg?style=flat-square)](https://www.npmjs.com/package/ant-crypto-core)| TBD | The javascript core of ant-crypto|
+| [`ant-crypto-utils`](/packages/ant-crypto-utils) | [![npm](https://img.shields.io/npm/v/ant-crypto-utils.svg?style=flat-square)](https://www.npmjs.com/package/ant-crypto-utils)| TBD | The utils of ant-crypto|
+| [`ant-crypto`](/packages/ant-crypto) | [![npm](https://img.shields.io/npm/v/ant-crypto.svg?style=flat-square)](https://www.npmjs.com/package/ant-crypto)| TBD | The core of ant-crypto|| [`ant-crypto`](/packages/ant-crypto) | ![npm](https://img.shields.io/npm/v/ant-crypto.svg?style=flat-square)](https://www.npmjs.com/package/ant-crypto) | TBD | The core of ant-crypto|
 
 # Supported browsers
 
