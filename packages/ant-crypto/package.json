@@ -1,0 +1,27 @@
+{
+  "name": "ant-crypto",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-morse/ant-crypto/tree/master/packages/ant-crypto",
+    "directory": "packages/ant-crypto"
+  },
+  "homepage": "https://github.com/ant-morse/ant-crypto",
+  "bugs": "https://github.com/ant-morse/ant-crypto/issues",
+  "authors": [
+    "fengsx <fengsx@msn.com> (https://github.com/fengsx)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ant-crypto-core": "^0.0.1"
+  }
+}

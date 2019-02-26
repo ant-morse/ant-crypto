@@ -1,4 +1,3 @@
-
 .tea
 .DS_Store
 dist
@@ -10,3 +9,4 @@ package-lock.json
 dist
 npm-debug.log*
 lerna-debug.log
+*-error.log
