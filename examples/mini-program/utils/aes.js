@@ -1,4 +1,4 @@
-import msrcrypto from 'ant-crypto';
+import msrcrypto from 'ant-crypto-core';
 import { toSupportedArray, bytesToHexString } from 'ant-crypto-utils';
 
 const msubtle = msrcrypto.subtle;

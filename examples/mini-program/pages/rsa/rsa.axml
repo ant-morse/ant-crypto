@@ -1,6 +1,6 @@
 <view>
   <view>
-    <button class="button" onTap="onTap"> ENCRYPT </button>
+    <button class="button" onTap="onTap"> RSA RUN </button>
   </view>
   <view>decrypt time: {{decryptTime}}ms</view>
   <view>decrypt text: {{decryptedPlainText}}</view>

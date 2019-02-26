@@ -68,8 +68,8 @@ export default async function onTap(plainText) {
   const time2 = +new Date();
 
   fn({
-    HMACHex: bytesToHexString(sig),
-    HMACHexTime: time2 - time1,
+    hamcHex: bytesToHexString(sig),
+    hamcHexTime: time2 - time1,
   });
 
   time1 = time2;

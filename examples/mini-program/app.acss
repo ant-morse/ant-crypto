@@ -2,10 +2,15 @@ page {
   flex: 1;
   display: flex;
   background: #f7f7f7;
+  word-break: break-word
 }
 
 .button {
   width: 100vw;
   background: #f37327;
   color: #fff;
+}
+
+view {
+  margin-bottom: 20rpx;
 }

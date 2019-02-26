@@ -1,8 +1,7 @@
 <view>
   <view>
-    <button class="button" onTap="onTap"> AES </button>
+    <button class="button" onTap="onTap"> AES RUN </button>
   </view>
-  <view>---------- ENCRYPETD PLAN TEXT ----------</view>
   <view>origin text: {{plainText}}</view>
   <view>generate key time: {{genTime}}ms</view>
   <view>export key time: {{exportTime}}ms</view>
