@@ -1,0 +1,24 @@
+{
+  "name": "ant-crypto-utils",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-morse/ant-crypto/tree/master/packages/ant-crypto-utils",
+    "directory": "packages/ant-crypto-utils"
+  },
+  "homepage": "https://github.com/ant-morse/ant-crypto",
+  "bugs": "https://github.com/ant-morse/ant-crypto/issues",
+  "authors": [
+    "fengsx <fengsx@msn.com> (https://github.com/fengsx)"
+  ],
+  "license": "MIT"
+}
