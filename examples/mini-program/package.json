@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "ant-crypto": "^0.0.3",
-    "ant-crypto-utils": "^0.0.1"
+    "ant-crypto": "^1.0.0",
+    "ant-crypto-utils": "^1.0.0"
   }
 }

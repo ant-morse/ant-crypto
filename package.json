@@ -1,6 +1,6 @@
 {
   "name": "ant-crypto",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "webcrypto library for node, browser and mini program",
   "scripts": {
     "bootstrap": "lerna bootstrap",
