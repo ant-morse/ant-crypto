@@ -1,6 +1,6 @@
 # ant-crypto-core
 
-Modify from the [Microsoft Research JavaScript Cryptography Library](https://www.microsoft.com/en-us/download/details.aspx?id=52439). I make a little change to make it work on mini program such as [Dingtalk EApp](https://open-doc.dingtalk.com/microapp/ln6dmh/bv006z) and [Alipay miniapp](https://mini.open.alipay.com/channel/miniIndex.htm).Previous features are not affected.
+Modify from the [Microsoft Research JavaScript Cryptography Library](https://www.microsoft.com/en-us/download/details.aspx?id=52439). I make a little change to make it work on mini program such as [Dingtalk EApp](https://open-doc.dingtalk.com/microapp/ln6dmh/bv006z) and [Alipay miniapp](https://mini.open.alipay.com/channel/miniIndex.htm).The previous features are are almost unaffected.
 
 ## What's MSR Crypto Library
 
@@ -20,13 +20,13 @@ This library is under active development. Future updates to this library may cha
 
 ## Where I modified
 
-`msrcrypto.js`:
+`msrcrypto.js` adn `msrcrypto.aes.js`:
 - Remove the polyfill of Promise. You can provide by yourself If needed.
-- Add `modules.export`.
+- Add `export`.
 - Run in async mode if `window` or `global` is undefined.
 - Jump what `EventListener` do if `addEventListener` is undefined.
 - Jump what `attachEvent` and `detachEvent` do if they are both undefined.
-
+- Move out `msrcryptoUtilities` and publish separately as  `ant-crypto-utils`.
 ## Thanks
 
 Thanks to [kevlened](https://github.com/kevlened) for his outstanding work. I got the inspiration from his [isomorphic-webcrypto](https://github.com/kevlened/isomorphic-webcrypto).

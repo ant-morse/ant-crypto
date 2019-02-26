@@ -1,8 +1,15 @@
 {
   "name": "ant-crypto-core",
-  "version": "1.4.1",
-  "dependencies": {},
-  "devDependencies": {},
+  "version": "0.0.1",
+  "main": "dist/msrcrypto.min.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ant-morse/ant-crypto/tree/master/packages/ant-crypto-core",
@@ -13,5 +20,8 @@
   "authors": [
     "fengsx <fengsx@msn.com> (https://github.com/fengsx)"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ant-crypto-utils": "^0.0.1"
+  }
 }
