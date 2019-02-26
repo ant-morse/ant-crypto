@@ -1,0 +1,11 @@
+page {
+  flex: 1;
+  display: flex;
+  background: #f7f7f7;
+}
+
+.button {
+  width: 100vw;
+  background: #f37327;
+  color: #fff;
+}

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/aes/aes",
+    "pages/hmac/hmac",
+    "pages/rsa/rsa"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

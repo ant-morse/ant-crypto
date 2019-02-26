@@ -1,0 +1,11 @@
+<view>
+  <view>
+    <button class="button" onTap="onTap"> HMACHex </button>
+  </view>
+  <view>---------- ENCRYPETD PLAN TEXT ----------</view>
+  <view>encrypted time: {{HMACHexTime}}ms</view>
+  <view>encrypted text: {{HMACHex}}</view>
+  <view>------------- VERIFY -------------</view>
+  <view>verify time: {{hmacVerifyTime}}ms</view>
+  <view>verify result: {{ hmacVerify? "success" : "failed" }}</view>
+</view>

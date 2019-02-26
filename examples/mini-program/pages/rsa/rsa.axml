@@ -1,0 +1,9 @@
+<view>
+  <view>
+    <button class="button" onTap="onTap"> ENCRYPT </button>
+  </view>
+  <view>decrypt time: {{decryptTime}}ms</view>
+  <view>decrypt text: {{decryptedPlainText}}</view>
+  <view>encrypt time: {{encryptTime}}ms</view>
+  <view>decrypt text: {{encryptedPlainText}}</view>
+</view>

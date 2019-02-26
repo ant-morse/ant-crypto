@@ -1,0 +1,14 @@
+<view>
+  <view>
+    <button class="button" onTap="onTap"> AES </button>
+  </view>
+  <view>---------- ENCRYPETD PLAN TEXT ----------</view>
+  <view>origin text: {{plainText}}</view>
+  <view>generate key time: {{genTime}}ms</view>
+  <view>export key time: {{exportTime}}ms</view>
+  <view>import key time: {{importTime}}ms</view>
+  <view>encrypted time: {{encryptedTime}}ms</view>
+  <view>encrypted text: {{encryptedText}}</view>
+  <view>decrypted time: {{decryptedTime}}ms</view>
+  <view>decrypted text: {{decryptedTime}}ms</view>
+</view>

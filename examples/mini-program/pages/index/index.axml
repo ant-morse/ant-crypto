@@ -1,0 +1,11 @@
+<view class="full-size">
+  <navigator url="/pages/rsa/rsa" redirect class="list-item">
+    RSA
+  </navigator>
+  <navigator url="/pages/aes/aes" redirect class="list-item">
+    AES
+  </navigator>
+  <navigator url="/pages/hmac/hmac" redirect class="list-item">
+    HMAC
+  </navigator>
+</view>

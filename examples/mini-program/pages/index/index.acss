@@ -1,0 +1,14 @@
+.full-size {
+  text-align: center;
+  width: 100vw;
+}
+.list-item {
+  display: block;
+  line-height: 88rpx;
+  height: 88rpx;
+  background: #f37327;
+  color: #fff;
+  font-size: 32rpx;
+  width: 80vw;
+  margin: 40rpx auto;
+}
