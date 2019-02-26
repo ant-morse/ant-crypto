@@ -3,7 +3,7 @@
 </h3>
 
 <p align="center">
-  Webcrypto library for node, browser and mini program
+  Web Crypto library for node, browser and mini program
 </p>
 
 # Packages
@@ -13,7 +13,7 @@ This repository is a monorepo that we manage using [Lerna](https://github.com/le
 | Package | Version | Docs | Description |
 |--|--|--|--|
 | [`ant-crypto-core`](/packages/ant-crypto-core) | ![npm](https://img.shields.io/npm/v/ant-crypto-core.svg?style=flat-square)| TBD | The javascript core of ant-crypto|
-| [`ant-crypto-utils`](/packages/ant-crypto-utils) | ![npm](https://img.shields.io/npm/v/ant-crypto-utils.svg?style=flat-square)| TBD | The uitls of ant-crypto|
+| [`ant-crypto-utils`](/packages/ant-crypto-utils) | ![npm](https://img.shields.io/npm/v/ant-crypto-utils.svg?style=flat-square)| TBD | The utils of ant-crypto|
 | [`ant-crypto`](/packages/ant-crypto) | ![npm](https://img.shields.io/npm/v/ant-crypto.svg?style=flat-square)| TBD | The core of ant-crypto|| [`ant-crypto`](/packages/ant-crypto) | ![npm](https://img.shields.io/npm/v/ant-crypto.svg?style=flat-square)](https://www.npmjs.com/package/ant-crypto) | TBD | The core of ant-crypto|
 
 # Supported browsers
@@ -36,3 +36,7 @@ These browsers have unprefixed and conforming webcrypto api implementations, so 
 # Supported mini program
 - [Dingtalk EApp](https://open-doc.dingtalk.com/microapp/ln6dmh/bv006z)
 - [Alipay miniapp](https://mini.open.alipay.com/channel/miniIndex.htm)
+
+# Examples
+- There are many awesome Web Crypto examples [here](https://github.com/diafygi/webcrypto-examples).
+- [There](https://github.com/ant-morse/ant-crypto/tree/master/examples/mini-program ) is a mini program examples of `ant-crypto`.
