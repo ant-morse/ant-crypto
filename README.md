@@ -38,5 +38,5 @@ These browsers have unprefixed and conforming webcrypto api implementations, so 
 - [Alipay miniapp](https://mini.open.alipay.com/channel/miniIndex.htm)
 
 # Examples
-- There are many awesome Web Crypto examples [here](https://github.com/diafygi/webcrypto-examples).
+- [There](https://github.com/diafygi/webcrypto-examples) are many awesome Web Crypto examples.
 - [There](https://github.com/ant-morse/ant-crypto/tree/master/examples/mini-program ) is a mini program examples of `ant-crypto`.
