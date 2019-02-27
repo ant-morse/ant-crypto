@@ -39,4 +39,4 @@ These browsers have unprefixed and conforming webcrypto api implementations, so 
 
 # Examples
 - [There](https://github.com/diafygi/webcrypto-examples) are many awesome Web Crypto examples.
-- [There](https://github.com/ant-morse/ant-crypto/tree/master/examples/mini-program ) is a mini program examples of `ant-crypto`.
+- [There](https://github.com/ant-morse/ant-crypto/tree/master/examples/mini-program ) is a mini program example of `ant-crypto`.
