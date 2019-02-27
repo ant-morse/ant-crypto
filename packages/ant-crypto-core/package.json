@@ -1,6 +1,6 @@
 {
   "name": "ant-crypto-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/msrcrypto.min.js",
   "files": [
     "dist",
@@ -22,6 +22,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "ant-crypto-utils": "^1.0.0"
+    "ant-crypto-utils": "1.0.1"
   }
 }
