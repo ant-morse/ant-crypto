@@ -26,7 +26,7 @@ This library is under active development. Future updates to this library may cha
 - Run in async mode if `window` or `global` is undefined.
 - Jump what `EventListener` do if `addEventListener` is undefined.
 - Jump what `attachEvent` and `detachEvent` do if they are both undefined.
-- Move out `msrcryptoUtilities` and publish separately as  `ant-crypto-utils`.
+- Move `msrcryptoUtilities` into  `ant-crypto-utils`.
 ## Thanks
 
-Thanks to [kevlened](https://github.com/kevlened) for his outstanding work. I got the inspiration from his [isomorphic-webcrypto](https://github.com/kevlened/isomorphic-webcrypto).
+Thanks to [kevlened](https://github.com/kevlened) for his outstanding work. I get the inspiration from his [isomorphic-webcrypto](https://github.com/kevlened/isomorphic-webcrypto).
