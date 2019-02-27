@@ -1,4 +1,4 @@
-import msrcrypto from 'ant-crypto-core';
+import msrcrypto from 'ant-crypto';
 import { toSupportedArray, bytesToHexString } from 'ant-crypto-utils';
 
 const msubtle = msrcrypto.subtle;
@@ -11,8 +11,6 @@ function getRandomValues(pool) {
 }
 
 export default async function onTap(plainText) {
-  const fn = (this && this.setData) || console.log;
-
   let time = +new Date();
 
   const genkey = await msubtle.generateKey(
@@ -23,21 +21,29 @@ export default async function onTap(plainText) {
     true, //whether the key is extractable (i.e. can be used in exportKey)
     ["encrypt", "decrypt"], //can "encrypt", "decrypt", "wrapKey", or "unwrapKey"
   );
-  //returns a key object
+
+  // a key object
   console.log(`generateKey`);
   console.log(genkey);
 
-  fn({ genTime: +new Date() - time });
+  this.setData({
+    genTime: +new Date() - time
+  });
+
   time = +new Date();
 
   const keydata = await msubtle.exportKey(
     "jwk", //can be "jwk" or "raw"
     genkey, //extractable must be true
   );
-  fn({ exportTime: +new Date() - time });
+
+  this.setData({
+    exportTime:
+      +new Date() - time
+  });
   time = +new Date();
 
-  //returns the exported key data
+  // the exported key data
   console.log(`exportKey`);
   console.log(keydata);
 
@@ -56,9 +62,11 @@ export default async function onTap(plainText) {
     true, //whether the key is extractable (i.e. can be used in exportKey)
     ["encrypt", "decrypt"], //can "encrypt", "decrypt", "wrapKey", or "unwrapKey"
   );
-  fn({ importTime: +new Date() - time });
+  this.setData({
+    importTime: +new Date() - time
+  });
   time = +new Date();
-  //returns the symmetric key
+  // the symmetric key
   console.log(`importKey`);
   console.log(key);
 
@@ -73,32 +81,30 @@ export default async function onTap(plainText) {
     key, //from generateKey or importKey above
     toSupportedArray(plainText), //ArrayBuffer of data you want to encrypt
   );
-  //returns an ArrayBuffer containing the encrypted data
-  console.log(`encrypt`);
-  console.log(new Uint8Array(encrypted));
-  fn({
+  this.setData({
     encryptedTime: +new Date() - time,
     encryptedText: bytesToHexString(toSupportedArray(encrypted)),
   });
   time = +new Date();
-  msubtle.decrypt({
+
+  // an ArrayBuffer containing the encrypted data
+  console.log(`encrypt`);
+  console.log(new Uint8Array(encrypted));
+
+  const decrypted = await msubtle.decrypt({
     name: "AES-CBC",
     iv, //The initialization vector you used to encrypt
   },
     key, //from generateKey or importKey above
     new Uint8Array(encrypted), //ArrayBuffer of the data
   )
-    .then((decrypted) => {
-      //returns an ArrayBuffer containing the decrypted data
-      console.log(`decrypt`);
-      console.log(new Uint8Array(decrypted));
-      fn({
-        decryptedTime: +new Date() - time,
-        decryptedText: bytesToHexString(toSupportedArray(decrypted)),
-      });
-      time = +new Date();
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+  this.setData({
+    decryptedTime: +new Date() - time,
+    decryptedText: bytesToHexString(toSupportedArray(decrypted)),
+  });
+
+  // an ArrayBuffer containing the decrypted data
+  console.log(`decrypt`);
+  console.log(new Uint8Array(decrypted));
+
 };

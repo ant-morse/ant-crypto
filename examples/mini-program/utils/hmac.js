@@ -6,7 +6,6 @@ import { toSupportedArray, bytesToHexString } from 'ant-crypto-utils';
 // - sign some data
 // - verify the signature
 
-
 // Go ahead and change window.msrCrypto to window.crypto in the line below to
 // verify this code against the native browser web crypto api.
 
@@ -43,8 +42,6 @@ subtle.importKey("jwk", hmckKeyInJwkFormat, keyImportAlgorithm, true, ["sign", "
   );
 
 export default async function onTap(plainText) {
-  const fn = (this && this.setData) || console.log;
-  let time1 = +new Date();
 
   // Make sure key has been imported
   if (!hmacKeyHandle) {
@@ -65,14 +62,14 @@ export default async function onTap(plainText) {
 
   const sig = toSupportedArray(hmacSignature);
 
-  const time2 = +new Date();
+  let time = +new Date();
 
-  fn({
+  this.setData({
     hamcHex: bytesToHexString(sig),
-    hamcHexTime: time2 - time1,
+    hamcHexTime: +new Date - time,
   });
 
-  time1 = time2;
+  time = +new Date();;
 
   const hmacVerifyAlgorithm = { name: "HMAC", hash: { name: "SHA-256" } };
 
@@ -82,10 +79,9 @@ export default async function onTap(plainText) {
     sig,
     plainTextBytes);
 
-  const time3 = +new Date();
-  fn({
+  this.setData({
     hmacVerify,
-    hmacVerifyTime: time3 - time1,
+    hmacVerifyTime: +new Date() - time,
   });
 }
 

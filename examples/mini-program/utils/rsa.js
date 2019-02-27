@@ -56,43 +56,41 @@ msubtle.importKey("jwk", publicKey, keyImportAlgorithm, true, ["encrypt"])
   );
 
 export default async function onTap(plainText) {
-  const fn = (this && this.setData) || console.log;
   // Abort if the key isn't imported yet
   if (!publicKeyHandle) {
     return;
   }
+
   const plainTextBytes = toSupportedArray(plainText);
-  let time1 = +new Date();
+  let time = +new Date();
   // Now that we have a public key, we can encrypt our data
   const encrypted = await msubtle.encrypt(encryptAlgorithm, publicKeyHandle, plainTextBytes)
 
   // We get our encrypted bytes as an ArrayBuffer (Array for IE8/9)
   encryptedBytes = toSupportedArray(encrypted);
-  const time2 = +new Date();
 
   // Display the encrypted data on the page
-  fn({
+  this.setData({
     encryptedPlainText: bytesToHexString(encryptedBytes),
-    encryptTime: time2 - time1,
+    encryptTime: +new Date() - time,
   });
 
-  time1 = time2;
+  time = +new Date();
   // Now we'll decrypt the encrypted data back to its original text
+
+  // Called when the RSA decrypt operation is completed
+  // RSA decryption is very slow.
+  // It can take 3-4 seconds with the debugger attached.
   const decryptedBytes = await msubtle.decrypt(
     decryptAlgorithm,
     privateKeyHandle,
     encryptedBytes);
 
-  // Called when the RSA decrypt operation is completed
-  // RSA decryption is very slow.
-  // It can take 3-4 seconds with the debugger attached.
-  const time3 = +new Date();
-
   // Convert the bytes back into a string
   const decryptedPlainText = String.fromCharCode.apply(null, toSupportedArray(decryptedBytes));
-  fn({
+  this.setData({
     decryptedPlainText,
-    decryptTime: time3 - time1,
+    decryptTime: +new Date() - time,
   });
 }
 
