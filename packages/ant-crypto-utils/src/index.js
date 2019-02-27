@@ -1,4 +1,3 @@
-
 const encodingChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
 const btoaSupport = (typeof btoa !== "undefined");
 
@@ -107,7 +106,7 @@ export function base64ToString(encodedString) {
 /**
  * Converts a Base64/Base64Url string to an Array
  *
- * @export encodedString
+ * @export base64ToBytes
  * @param {string} encodedString A Base64/Base64Url encoded string
  * @returns {array}
  */
@@ -533,7 +532,6 @@ export function verifyByteArray(array) {
 
   for (let i = 0; i < array.length; i += 1) {
     element = array[i];
-
     if (isNaN(element) || element < 0 || element > 255) {
       return false;
     }
