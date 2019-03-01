@@ -27,6 +27,28 @@ This library is under active development. Future updates to this library may cha
 - Jump what `EventListener` do if `addEventListener` is undefined.
 - Jump what `attachEvent` and `detachEvent` do if they are both undefined.
 - Move `msrcryptoUtilities` into  `ant-crypto-utils`.
+
+
+## Supported Cryptography
+
+|                    | digest | generateKey | importKey | exportKey | sign | verify | encrypt | decrypt | deriveKey | deriveBits | wrapKey | unwrapKey |
+|:--                 |:--     |:--          |:--        |:--        |:--   |:--     |:--      |:--      |:--        |:--         |:--      |:--        |
+| SHA-1              |   √    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-224            |   √    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-256            |   √    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-384            |   √    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-512            |   √    |             |           |           |      |        |         |         |           |            |         |           |
+| HMAC               |        |      √      |     √     |     √     |   √  |   √    |         |         |           |            |         |           |
+| AES-CBC            |        |      √      |     √     |     √     |      |        |    √    |    √    |           |            |         |     √     |
+| AES-GCM            |        |      √      |     √     |     √     |      |        |    √    |    √    |           |            |    √    |           |
+| RSA-OAEP           |        |             |     √     |     √     |      |        |    √    |    √    |           |            |         |           |
+| RSAES-PKCS1-V1_5   |        |             |     √     |     √     |      |        |    √    |    √    |           |            |         |           |
+| RSASSA-PKCS1-v1_5  |        |             |     √     |     √     |   √  |   √    |         |         |           |            |         |           |
+| RSA-PSS            |        |             |           |           |   √  |   √    |         |         |           |            |         |           |
+| ECDH               |        |      √      |     √     |     √     |      |        |         |         |           |     √      |         |           |
+| ECDSA              |        |      √      |     √     |     √     |   √  |   √    |         |         |           |            |         |           |
+
+
 ## Thanks
 
 Thanks to [kevlened](https://github.com/kevlened) for his outstanding work. I get the inspiration from his [isomorphic-webcrypto](https://github.com/kevlened/isomorphic-webcrypto).
