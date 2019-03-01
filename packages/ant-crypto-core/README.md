@@ -32,21 +32,21 @@ This library is under active development. Future updates to this library may cha
 ## Supported Cryptography
 
 |                    | digest | generateKey | importKey | exportKey | sign | verify | encrypt | decrypt | deriveKey | deriveBits | wrapKey | unwrapKey |
-|:--                 |:--     |:--          |:--        |:--        |:--   |:--     |:--      |:--      |:--        |:--         |:--      |:--        |
-| SHA-1              |   √    |             |           |           |      |        |         |         |           |            |         |           |
-| SHA-224            |   √    |             |           |           |      |        |         |         |           |            |         |           |
-| SHA-256            |   √    |             |           |           |      |        |         |         |           |            |         |           |
-| SHA-384            |   √    |             |           |           |      |        |         |         |           |            |         |           |
-| SHA-512            |   √    |             |           |           |      |        |         |         |           |            |         |           |
-| HMAC               |        |      √      |     √     |     √     |   √  |   √    |         |         |           |            |         |           |
-| AES-CBC            |        |      √      |     √     |     √     |      |        |    √    |    √    |           |            |         |     √     |
-| AES-GCM            |        |      √      |     √     |     √     |      |        |    √    |    √    |           |            |    √    |           |
-| RSA-OAEP           |        |             |     √     |     √     |      |        |    √    |    √    |           |            |         |           |
-| RSAES-PKCS1-V1_5   |        |             |     √     |     √     |      |        |    √    |    √    |           |            |         |           |
-| RSASSA-PKCS1-v1_5  |        |             |     √     |     √     |   √  |   √    |         |         |           |            |         |           |
-| RSA-PSS            |        |             |           |           |   √  |   √    |         |         |           |            |         |           |
-| ECDH               |        |      √      |     √     |     √     |      |        |         |         |           |     √      |         |           |
-| ECDSA              |        |      √      |     √     |     √     |   √  |   √    |         |         |           |            |         |           |
+|:-----              |:--     |:--          |:--        |:--        |:--   |:--     |:--      |:--      |:--        |:--         |:--      |:--        |
+| SHA-1              |   ✔    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-224            |   ✔    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-256            |   ✔    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-384            |   ✔    |             |           |           |      |        |         |         |           |            |         |           |
+| SHA-512            |   ✔    |             |           |           |      |        |         |         |           |            |         |           |
+| HMAC               |        |      ✔      |     ✔     |     ✔     |   ✔  |   ✔    |         |         |           |            |         |           |
+| AES-CBC            |        |      ✔      |     ✔     |     ✔     |      |        |    ✔    |    ✔    |           |            |         |     ✔     |
+| AES-GCM            |        |      ✔      |     ✔     |     ✔     |      |        |    ✔    |    ✔    |           |            |    ✔    |           |
+| RSA-OAEP           |        |             |     ✔     |     ✔     |      |        |    ✔    |    ✔    |           |            |         |           |
+| RSAES-PKCS1-V1_5   |        |             |     ✔     |     ✔     |      |        |    ✔    |    ✔    |           |            |         |           |
+| RSASSA-PKCS1-v1_5  |        |             |     ✔     |     ✔     |   ✔  |   ✔    |         |         |           |            |         |           |
+| RSA-PSS            |        |             |           |           |   ✔  |   ✔    |         |         |           |            |         |           |
+| ECDH               |        |      ✔      |     ✔     |     ✔     |      |        |         |         |           |     ✔      |         |           |
+| ECDSA              |        |      ✔      |     ✔     |     ✔     |   ✔  |   ✔    |         |         |           |            |         |           |
 
 
 ## Thanks
